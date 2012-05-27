@@ -28,7 +28,7 @@ public class AppController implements ValueChangeHandler<String> {
 	public void attach(final HasWidgets container) {
 		this.container = container;
 		if (History.getToken().length() == 0) 
-			History.newItem("act=index"); // default action
+			History.newItem("act="+HandleGreetings.act); // default action
 		History.fireCurrentHistoryState();
 	}
 	/* History change handler */
