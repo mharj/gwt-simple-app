@@ -2,6 +2,6 @@ syntax: glob
 *.class
 war/WEB-INF/classes
 war/WEB-INF/deploy
-war/WEB-INF/lib
+war/WEB-INF/lib/*.jar
 gwt-unitCache/
 war/simpleapp
