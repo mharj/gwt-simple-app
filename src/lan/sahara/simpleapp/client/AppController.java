@@ -23,6 +23,7 @@ public class AppController implements ValueChangeHandler<String> {
 		History.addValueChangeHandler(this);
 		// register act name and construct applications here
 		apps.put(HandleGreetings.act, new HandleGreetings(sub));		
+		apps.put(HandleCodeSplitExample.act, new HandleCodeSplitExample(sub));
 	}
 	/* controller attach */
 	public void attach(final HasWidgets container) {
